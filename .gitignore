@@ -7,3 +7,4 @@ simulacion-python/figuras/
 simulacion-python/audio/
 prototipo1/laptop/resultados/
 .env*
+*.md
