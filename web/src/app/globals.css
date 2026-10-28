@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Paleta: neutros de papel y tinta + un color por modulación (los mismos de las figuras de
+ * simulacion-python). Contrastes verificados con contrast-check.py:
+ * tinta/papel 14,5:1 · tenue/papel 7,1:1 · tenue/blanco 7,8:1 · bpsk 8,0:1 · qpsk-texto 5,6:1 ·
+ * qam-texto 6,0:1 · falla 6,6:1 (todos sobre blanco).
+ */
+@theme {
+  --color-papel: #f6f5f1;
+  --color-tinta: #1b2330;
+  --color-tenue: #4a5361;
+  --color-borde: #cfd3d8;
+  --color-borde-fuerte: #7d8590;
+  --color-rejilla: #e3e5e8;
+  --color-bpsk: #1f4e9c;
+  --color-qpsk: #d9731f;
+  --color-qpsk-texto: #a4510c;
+  --color-qam: #2e8b57;
+  --color-qam-texto: #22704a;
+  --color-falla: #b42318;
+  --color-falla-fondo: #fbeae8;
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-papel);
+  color: var(--color-tinta);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Foco visible en todo control: anillo de tinta (14,5:1 sobre el papel). */
+:where(a, button, input, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-tinta);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+input[type="range"] {
+  min-height: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }
