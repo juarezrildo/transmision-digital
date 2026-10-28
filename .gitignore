@@ -7,3 +7,14 @@ simulacion-python/figuras/
 simulacion-python/audio/
 prototipo1/laptop/resultados/
 .env*
+*.md
+# Markdown: solo se versionan los documentos del proyecto
+!README.md
+!PLAN.md
+!CLAUDE.md
+!COMO_INICIAR.md
+!docs/*.md
+!prototipo1/GUIA_MONTAJE.md
+!.claude/**/*.md
+!web/AGENTS.md
+!web/README.md
