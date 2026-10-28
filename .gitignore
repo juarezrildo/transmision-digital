@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+.vercel/
+__pycache__/
+simulacion-python/figuras/
+simulacion-python/audio/
+prototipo1/laptop/resultados/
+.env*

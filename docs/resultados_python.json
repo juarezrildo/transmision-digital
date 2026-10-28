@@ -1,0 +1,365 @@
+{
+  "sqnr": [
+    {
+      "N": 6,
+      "teorico": 37.879999999999995,
+      "seno": 37.701731828913665,
+      "voz": 29.749251074065857,
+      "Rb_canal": 48000,
+      "Rb_total": 256000
+    },
+    {
+      "N": 8,
+      "teorico": 49.919999999999995,
+      "seno": 49.951298890922125,
+      "voz": 41.81418521593462,
+      "Rb_canal": 64000,
+      "Rb_total": 320000
+    },
+    {
+      "N": 10,
+      "teorico": 61.959999999999994,
+      "seno": 62.02289210035402,
+      "voz": 53.87589770707146,
+      "Rb_canal": 80000,
+      "Rb_total": 384000
+    }
+  ],
+  "tdm": {
+    "bits_trama": 40,
+    "Rb_kbps": 320.0,
+    "bits_totales": 640000
+  },
+  "codigos_linea": [
+    {
+      "codigo": "NRZ unipolar",
+      "B90_kHz": 175.0,
+      "DC": 0.42508,
+      "errores_sin_ruido": 0
+    },
+    {
+      "codigo": "NRZ polar",
+      "B90_kHz": 235.0,
+      "DC": -0.14984,
+      "errores_sin_ruido": 0
+    },
+    {
+      "codigo": "Manchester",
+      "B90_kHz": 955.0,
+      "DC": 0.0,
+      "errores_sin_ruido": 0
+    },
+    {
+      "codigo": "AMI",
+      "B90_kHz": 480.0,
+      "DC": 0.0,
+      "errores_sin_ruido": 0
+    }
+  ],
+  "modulaciones": [
+    {
+      "mod": "BPSK",
+      "k": 1,
+      "Rs_kbaud": 320.0,
+      "B_kHz": 432.0,
+      "cumple_B": false,
+      "EbN0_req_dB": 10.529831699571448,
+      "eficiencia": 0.7407407407407407,
+      "CN_req_dB": 9.226494014621386
+    },
+    {
+      "mod": "QPSK",
+      "k": 2,
+      "Rs_kbaud": 160.0,
+      "B_kHz": 216.0,
+      "cumple_B": true,
+      "EbN0_req_dB": 10.529831699571448,
+      "eficiencia": 1.4814814814814814,
+      "CN_req_dB": 12.236793971261198
+    },
+    {
+      "mod": "16-QAM",
+      "k": 4,
+      "Rs_kbaud": 80.0,
+      "B_kHz": 108.0,
+      "cumple_B": true,
+      "EbN0_req_dB": 14.401727044102204,
+      "eficiencia": 2.962962962962963,
+      "CN_req_dB": 19.11898927243177
+    }
+  ],
+  "ber_curvas": {
+    "EbN0_dB": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "BPSK": [
+      0.0785725,
+      0.05649,
+      0.038205,
+      0.0230325,
+      0.012095,
+      0.0059175,
+      0.0024225,
+      0.000775,
+      0.0001975,
+      3.642857142857143e-05,
+      4e-06,
+      4.5e-07,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "QPSK": [
+      0.07807375,
+      0.05567625,
+      0.03763125,
+      0.0227825,
+      0.01240375,
+      0.00603875,
+      0.00243125,
+      0.00071125,
+      0.000196875,
+      2.986111111111111e-05,
+      4.6e-06,
+      3.5e-07,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "16-QAM": [
+      0.14107375,
+      0.11909375,
+      0.097801875,
+      0.077593125,
+      0.058554375,
+      0.041599375,
+      0.027869375,
+      0.01717125,
+      0.0093125,
+      0.004410625,
+      0.001768125,
+      0.000543125,
+      0.000134375,
+      2.725e-05,
+      2.644230769230769e-06,
+      9.615384615384616e-08,
+      4.807692307692308e-08
+    ]
+  },
+  "tramo_cable": {
+    "codigo": "Manchester",
+    "errores": 0,
+    "bits": 640000
+  },
+  "cadena": [
+    {
+      "mod": "BPSK",
+      "EbN0_dB": "sin ruido",
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "BPSK",
+      "EbN0_dB": 14,
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "BPSK",
+      "EbN0_dB": 12,
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "BPSK",
+      "EbN0_dB": 10,
+      "BER": 4.6875e-06,
+      "errores": 3,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 38.086203752933194
+    },
+    {
+      "mod": "BPSK",
+      "EbN0_dB": 8,
+      "BER": 0.0001890625,
+      "errores": 121,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 26.241970343962354
+    },
+    {
+      "mod": "BPSK",
+      "EbN0_dB": 6,
+      "BER": 0.0024140625,
+      "errores": 1545,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 13.716140961074052
+    },
+    {
+      "mod": "BPSK",
+      "EbN0_dB": 4,
+      "BER": 0.0122203125,
+      "errores": 7821,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 6.9050191573548
+    },
+    {
+      "mod": "QPSK",
+      "EbN0_dB": "sin ruido",
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "QPSK",
+      "EbN0_dB": 14,
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "QPSK",
+      "EbN0_dB": 12,
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "QPSK",
+      "EbN0_dB": 10,
+      "BER": 3.125e-06,
+      "errores": 2,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.01335596911311
+    },
+    {
+      "mod": "QPSK",
+      "EbN0_dB": 8,
+      "BER": 0.0001734375,
+      "errores": 111,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 24.87474849201712
+    },
+    {
+      "mod": "QPSK",
+      "EbN0_dB": 6,
+      "BER": 0.002484375,
+      "errores": 1590,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 13.522890074475994
+    },
+    {
+      "mod": "QPSK",
+      "EbN0_dB": 4,
+      "BER": 0.0126828125,
+      "errores": 8117,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 6.593331634773566
+    },
+    {
+      "mod": "16-QAM",
+      "EbN0_dB": "sin ruido",
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "16-QAM",
+      "EbN0_dB": 14,
+      "BER": 0.0,
+      "errores": 0,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 41.81418521593462
+    },
+    {
+      "mod": "16-QAM",
+      "EbN0_dB": 12,
+      "BER": 0.0001453125,
+      "errores": 93,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 26.787275311097705
+    },
+    {
+      "mod": "16-QAM",
+      "EbN0_dB": 10,
+      "BER": 0.00166875,
+      "errores": 1068,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 15.805007488479786
+    },
+    {
+      "mod": "16-QAM",
+      "EbN0_dB": 8,
+      "BER": 0.008646875,
+      "errores": 5534,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 9.11866660047537
+    },
+    {
+      "mod": "16-QAM",
+      "EbN0_dB": 6,
+      "BER": 0.0259625,
+      "errores": 16616,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 4.336716907294868
+    },
+    {
+      "mod": "16-QAM",
+      "EbN0_dB": 4,
+      "BER": 0.0538328125,
+      "errores": 34453,
+      "bits": 640000,
+      "desplazamiento_trama": 0,
+      "SNR_salida_dB": 1.304308545656993
+    }
+  ]
+}
